@@ -1,0 +1,152 @@
+/*Universal Stuff*/
+
+/*Header*/
+:root{
+    --font-size-page-header: 3.5rem;
+    --font-size-normal: 1.25rem;
+    --font-size-button: 1.00rem;
+    --font-size-dropdown-normal: 1.00rem;
+    --font-size-dropdown-button: .95rem;
+    --font-size-sub-dropdown-normal: 1.00rem;
+    --text-color: white;
+    --background-color: black;
+    --background-color-hover: darkgray;
+    --background-color-dropdown: rgb(100, 100, 100);
+    --background-color-active: rgb(60, 60, 60);
+    --background-color-dropdown-hover: rgb(75, 75, 75);
+    --header-height: 30rem;
+    --dropdown-width: 11rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('https://thumbs.dreamstime.com/b/data-concept-gears-digital-background-abstract-technology-mechanical-engineering-133099897.jpg');
+    background-size: 100% 100%;
+    height: var(--header-height);
+    width: 100%;
+    color: var(--text-color);
+}
+.title{
+    padding-top: 125px;
+    font-size: 4em;
+    text-align: center;
+}
+.description{
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    padding: 1rem 1.5rem;
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 20px auto auto;
+    background-color: white;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    padding: 10px 5px;
+    list-style: none;
+}
+.nav-link{
+    font-size: var(--font-size-normal);
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.nav-active{
+    background-color: var(--background-color-dropdown);
+}
+.navbar a:hover:not(.nav-active){
+    background-color: var(--background-color-hover);
+}
+
+@media only screen and (max-width: 768px){
+    header.active{
+        position: fixed;
+        background-color: black;
+    }
+    .header-img{
+        width: 75%;
+        padding: 5em 0;
+    }
+    .header-title{
+        font-size: var(--font-size-page-header);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        height: 100%;
+        top: 20em;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: relative;
+        background-color: var(--background-color-dropdown);
+        width: var(--dropdown-width);
+    }
+    .nav-link{
+        font-size: 1.5em;
+    }
+    .dropbtn{
+        font-size: 1.5em;
+        width: 6em;
+    }
+    .sub-nav-link{
+        text-align: center;
+    }
+    .sub-dropbtn{
+        margin: auto;
+    }
+    .caret-right{
+        display: none;
+    }
+    .caret-down{
+        display: inline;
+    }
+    .sub-dropdown-content{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .hamburger{
+        display: block;
+        margin: auto 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
