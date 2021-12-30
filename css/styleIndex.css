@@ -1,8 +1,33 @@
+:root{
+    --text-color: white;
+    --interest-padding: 50px
+}
 body{
+    background-color: rgb(75, 0, 0);
+}
+section{
     background-color: rgb(14, 14, 14);
+    margin: 0 20px 20px 20px;
+    color: var(--text-color);
 }
 .header-title{
-    color: black;
     font-size: 3em;
     text-align: center;
+}
+.header1{
+    font-size: 2em;
+    text-align: center;
+}
+.column{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.interest-name{
 }
