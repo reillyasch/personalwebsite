@@ -23,7 +23,7 @@
     box-sizing: border-box;
 }
 header{
-    background-image: url('https://github.com/reillyasch/personalwebsite/blob/main/images/Image2.jpg');
+    background-image: url('https://github.com/reillyasch/personalwebsite/blob/c578dc3c67b36aa4a3f471e9c15b88ac99368a24/images/Image2.jpg');
     background-size: 100% 100%;
     height: var(--header-height);
     width: 100%;
@@ -58,7 +58,7 @@ section{
     width: 25px;
     height: 3px;
     margin: 5px 20px auto auto;
-    background-color: white;
+    background-color: black;
 }
 .nav-menu{
     display: flex;
