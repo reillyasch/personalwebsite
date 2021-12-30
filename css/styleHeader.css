@@ -15,7 +15,7 @@
     --background-color-active: rgb(60, 60, 60);
     --background-color-dropdown-hover: rgb(75, 75, 75);
     --header-height: 30rem;
-    --dropdown-width: 11rem;
+    --dropdown-width: 10rem;
 }
 *{
     margin: 0;
@@ -23,16 +23,22 @@
     box-sizing: border-box;
 }
 header{
-    background-image: url('https://thumbs.dreamstime.com/b/data-concept-gears-digital-background-abstract-technology-mechanical-engineering-133099897.jpg');
+    background-image: url('https://github.com/reillyasch/personalwebsite/blob/main/images/Image2.jpg');
     background-size: 100% 100%;
     height: var(--header-height);
     width: 100%;
     color: var(--text-color);
 }
+
+section{
+    background-color: black;
+    background-image: linear-gradient(to right, rgb(50, 117, 162, 0.8), rgb(14, 14, 14) 25% 75%, rgba(227, 96, 16, 0.8));
+}
 .title{
     padding-top: 125px;
     font-size: 4em;
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 .description{
     padding-top: 20px;

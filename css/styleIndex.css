@@ -2,32 +2,40 @@
     --text-color: white;
     --interest-padding: 50px
 }
-body{
-    background-color: rgb(75, 0, 0);
-}
 section{
-    background-color: rgb(14, 14, 14);
-    margin: 0 20px 20px 20px;
     color: var(--text-color);
+    height: 100%;
 }
 .header-title{
     font-size: 3em;
     text-align: center;
+    padding-bottom: 10px;
 }
-.header1{
+.header1, .header2{
     font-size: 2em;
     text-align: center;
+    text-decoration: underline;
 }
 .column{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 50px;
+    float: left;
+    width: 50%;
+    height: 100px;
+    padding: 0 25%;
+}
+.sub-column{
+    float: left;
+    width: 50%;
+    height: 100px;
+    padding: 0 0;
 }
 .row::after{
     content: "";
     clear: both;
     display: table;
 }
+.activity-name{
+
+}
 .interest-name{
+
 }
