@@ -2,10 +2,6 @@
     --text-color-index: white;
     --interest-padding: 50px
 }
-section{
-    color: var(--text-color-index);
-    height: 100%;
-}
 .header1, .header2{
     font-size: 2.5em;
     text-align: center;
@@ -16,7 +12,7 @@ section{
 }
 .column{
     width: 50%;
-    height: 300px;
+    min-height: 300px;
     padding: 10px 5%;
     float: left;
 }
@@ -27,7 +23,7 @@ section{
 }
 .activity-pic, .interest-pic{
     width: 50%;
-    height: 100%;
+    height: auto;
     border-radius: 12.5px;
     float: left;
 }
@@ -43,4 +39,10 @@ section{
 }
 .activity-text, .interest-text{
     font-size: 1.125em;
+}
+
+@media only screen and (max-width: 1150px){
+    .column{
+        width: 100%;
+    }
 }

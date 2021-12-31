@@ -4,34 +4,27 @@
 :root{
     --font-size-page-header: 3.5rem;
     --font-size-normal: 1.25rem;
-    --font-size-button: 1.00rem;
-    --font-size-dropdown-normal: 1.00rem;
-    --font-size-dropdown-button: .95rem;
-    --font-size-sub-dropdown-normal: 1.00rem;
-    --text-color: rgb(226, 226, 226);
     --background-color: black;
     --background-color-hover: darkgray;
-    --background-color-dropdown: rgb(100, 100, 100);
-    --background-color-active: rgb(60, 60, 60);
-    --background-color-dropdown-hover: rgb(75, 75, 75);
+    --background-color-active: rgb(100, 100, 100);
+    --navbar-height: 5rem;
     --header-height: 30rem;
-    --dropdown-width: 10rem;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(226, 226, 226, 0.884);
 }
 header{
     background-image: url('https://static.vecteezy.com/system/resources/previews/002/043/025/non_2x/design-in-the-concept-of-electronic-circuit-boards-vector.jpg');
     background-size: 100% 100%;
     height: var(--header-height);
-    width: 100%;
-    color: var(--text-color);
 }
-
 section{
     background-color: rgba(0, 92, 153);
+    border: 20px solid rgba(1, 20, 32);
 }
 .title{
     padding-top: 75px;
@@ -52,6 +45,8 @@ section{
     display: flex;
     justify-content: right;
     padding: 1rem 1.5rem;
+    background-color: transparent;
+    height: var(--navbar-height);
 }
 .hamburger{
     display: none;
@@ -61,7 +56,7 @@ section{
     width: 25px;
     height: 3px;
     margin: 5px 20px auto auto;
-    background-color: black;
+    background-color: white;
 }
 .nav-menu{
     display: flex;
@@ -79,7 +74,7 @@ section{
     text-decoration: none;
 }
 .nav-active{
-    background-color: var(--background-color-dropdown);
+    background-color: var(--background-color-active);
 }
 .navbar a:hover:not(.nav-active){
     background-color: var(--background-color-hover);
