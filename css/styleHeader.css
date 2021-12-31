@@ -29,17 +29,23 @@ header{
     width: 100%;
     color: var(--text-color);
 }
+
 section{
     background-color: rgba(0, 92, 153);
 }
 .title{
-    padding-top: 125px;
+    padding-top: 75px;
     font-size: 4em;
     text-align: center;
 }
 .description{
     padding-top: 20px;
     font-size: 2em;
+    text-align: center;
+}
+.header-title{
+    padding: 10px 0;
+    font-size: 3em;
     text-align: center;
 }
 .navbar{
@@ -80,18 +86,6 @@ section{
 }
 
 @media only screen and (max-width: 768px){
-    header.active{
-        position: fixed;
-        background-color: black;
-    }
-    .header-img{
-        width: 75%;
-        padding: 5em 0;
-    }
-    .header-title{
-        font-size: var(--font-size-page-header);
-    }
-
     .nav-menu{
         position: fixed;
         left: -100%;
@@ -105,38 +99,6 @@ section{
     .nav-menu.active{
         left: 0;
     }
-    
-    .dropdown-content{
-        display: none;
-        position: relative;
-        background-color: var(--background-color-dropdown);
-        width: var(--dropdown-width);
-    }
-    .nav-link{
-        font-size: 1.5em;
-    }
-    .dropbtn{
-        font-size: 1.5em;
-        width: 6em;
-    }
-    .sub-nav-link{
-        text-align: center;
-    }
-    .sub-dropbtn{
-        margin: auto;
-    }
-    .caret-right{
-        display: none;
-    }
-    .caret-down{
-        display: inline;
-    }
-    .sub-dropdown-content{
-        position: relative;
-        left: 0;
-        top: 0;
-    }
-
     .hamburger{
         display: block;
         margin: auto 0;

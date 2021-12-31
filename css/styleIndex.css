@@ -6,20 +6,41 @@ section{
     color: var(--text-color-index);
     height: 100%;
 }
-.header-title{
-    font-size: 3em;
-    text-align: center;
-    padding-bottom: 10px;
-}
 .header1, .header2{
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     text-decoration: underline;
 }
-
-.activity-name{
-
+.activities-and-interests{
+    text-align: center;
 }
-.interest-name{
-
+.column{
+    width: 50%;
+    height: 300px;
+    padding: 10px 5%;
+    float: left;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.activity-pic, .interest-pic{
+    width: 50%;
+    height: 100%;
+    border-radius: 12.5px;
+    float: left;
+}
+.activity, .interest{
+    text-align: center;
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+}
+.activity-name, .interest-name{
+    font-weight: bold;
+    font-size: 2em;
+}
+.activity-text, .interest-text{
+    font-size: 1.125em;
 }
